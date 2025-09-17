@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя первая страница мини-приложения</title>
+    <!-- Добавляем стили -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p>Это моя первая страница мини-приложения.</p>
+    
+    <!-- Кнопка возврата назад -->
+    <button onclick="window.Telegram.WebApp.close()">Закрыть приложение</button>
+
+    <!-- Подключаем скрипт для взаимодействия с Telegram -->
+    <script src="https://cdn.jsdelivr.net/npm/@telegram/widgets@latest/js/telegram-web-app.js"></script>
+    <script>
+        // Обработчик инициализации приложения
+        window.Telegram.WebApp.ready();
+        
+        // Проверяем доступность функций Telegram
+        if (!window.Telegram.WebApp.isActivated()) {
+            alert('Ошибка активации приложения');
+        }
+    </script>
+</body>
+</html>
