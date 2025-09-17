@@ -62,7 +62,7 @@ async def draw_winner(context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=context.job.chat_id, text="Нет участников в текущей игре.")
 
 def main():
-   TOKEN = 8301014065:AAExTdKMjqCrfnbhYAw8cnl-YUdbG5buPPM
+   TOKEN = 
     
     # Регистрация обработчиков команд
     application.add_handler(CommandHandler("start", start))
@@ -80,4 +80,5 @@ if __name__ == '__main__':
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.run_polling()
+
 
