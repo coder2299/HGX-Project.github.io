@@ -1,0 +1,24 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator Mini App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Бюджетный калькулятор</h1>
+        <form id="budgetForm">
+            <label for="income">Доход:</label><br>
+            <input type="number" id="income" required><br>
+            <label for="expenses">Расходы:</label><br>
+            <input type="number" id="expenses" required><br>
+            <button type="submit">Посчитать баланс</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
